@@ -1,6 +1,6 @@
 """Semantic search MCP server for Obsidian vaults."""
 
-__version__ = "0.1.0"
+__version__ = "0.6.0"
 
 from .indexer import VaultIndexer, VaultWatcher
 
