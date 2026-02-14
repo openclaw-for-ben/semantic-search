@@ -160,6 +160,20 @@ make check
 make test
 ```
 
+### Editable Install (for local development)
+
+Install as a tool while developing locally — changes take effect immediately:
+
+```bash
+# Editable install (CPU-only recommended)
+uv tool install --editable ~/path/to/semantic-search \
+  --index https://download.pytorch.org/whl/cpu
+
+# Now 'semantic-search-mcp' command uses your local source
+```
+
+This is useful when developing alongside other projects that use semantic-search.
+
 ## License
 
 BSD 2-Clause License — see [LICENSE](LICENSE).
