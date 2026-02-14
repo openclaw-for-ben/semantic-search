@@ -1,18 +1,42 @@
 # Semantic Search
 
+[![CI](https://github.com/bborbe/semantic-search/actions/workflows/ci.yml/badge.svg)](https://github.com/bborbe/semantic-search/actions/workflows/ci.yml)
+[![License](https://img.shields.io/badge/license-BSD--2--Clause-blue.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+
 Semantic search over markdown files. Find related notes by meaning, not just keywords. Detect duplicates before creating new notes.
+
+**Use cases:**
+- Find notes similar to what you're writing before creating duplicates
+- Search your Obsidian vault by concept, not just keywords
+- Power AI assistants with relevant context from your notes
 
 Supports two server modes:
 - **MCP mode** — For Claude Code integration
 - **REST mode** — For OpenClaw, scripts, and HTTP clients
 
+## Quick Start
+
+```bash
+# Install
+uv tool install git+https://github.com/bborbe/semantic-search
+
+# Search your vault
+CONTENT_PATH=~/vault semantic-search-mcp search "kubernetes networking"
+```
+
 ## Features
 
-- Semantic search using sentence-transformers
-- Duplicate/similar note detection
-- Auto-updating index with file watcher
-- Multi-directory support
-- Inline tag extraction (`#tag-name`)
+- 🔍 Semantic search using sentence-transformers
+- 📝 Duplicate/similar note detection
+- 🔄 Auto-updating index with file watcher
+- 📁 Multi-directory support
+- 🏷️ Inline tag extraction (`#tag-name`)
+
+## Requirements
+
+- Python 3.10+
+- [uv](https://docs.astral.sh/uv/) (recommended) or pip
 
 ## Installation
 
