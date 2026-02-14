@@ -165,7 +165,10 @@ make test
 Install as a tool while developing locally — changes take effect immediately:
 
 ```bash
-# Editable install (CPU-only recommended)
+# With GPU (default)
+uv tool install --editable ~/path/to/semantic-search
+
+# Without GPU (CPU-only, saves disk space)
 uv tool install --editable ~/path/to/semantic-search \
   --index https://download.pytorch.org/whl/cpu
 
